@@ -9,7 +9,7 @@ public class AlarmClock extends Clock
 {
     protected String alarmTime;
 
-    public AlarmClock( String manufacturer, double price, double weight, String alarmTime, String currentTime) 
+    public AlarmClock( String manufacturer, double price, double weight, String currentTime, String alarmTime) 
     {
         super(manufacturer, price, weight, currentTime);
         this.alarmTime = alarmTime;
