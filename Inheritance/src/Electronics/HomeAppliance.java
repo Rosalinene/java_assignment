@@ -8,9 +8,10 @@ package Electronics;
 public abstract class HomeAppliance extends Electronics
 {
 
-    public HomeAppliance(String manufacturer, double price, double weight) {
+    public HomeAppliance(String manufacturer, double price, double weight) 
+    {
         super(manufacturer, price, weight);
-    }
+    }//End Constructor
 
-    public abstract void room();
+    public abstract String room();
 }//End HomeAppliance

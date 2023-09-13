@@ -19,13 +19,15 @@ public class Printer extends HomeAppliance
         this.inkLoaded = inkLoaded;
     }//End constructor
 
-    public boolean printerStatus() {
+    public boolean printerStatus() 
+    {
         return this.paperLoaded && this.inkLoaded;
-    }
+    }//End printerStatus()
 
    @Override
-    public void room() 
+    public String room() 
     {
         System.out.println("This still have room for that");
+        return null;
     }//End room()
 }//End Printer

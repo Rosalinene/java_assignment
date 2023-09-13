@@ -15,6 +15,13 @@ public class AlarmClock extends Clock
         this.alarmTime = alarmTime;
     }//End constructor
 
+    @Override
+    public String room() 
+    {
+        System.out.println("This still have room for that");
+        return null;
+    }//End room()
+    
     public void setAlarmTime(String alarmTime) 
     {
         this.alarmTime = alarmTime;
@@ -29,10 +36,4 @@ public class AlarmClock extends Clock
         
         return msg;
     }//End toString
-    
-    @Override
-    public void room() 
-    {
-        System.out.println("This still have room for that");
-    }//End room()
 }//End AlarmClock

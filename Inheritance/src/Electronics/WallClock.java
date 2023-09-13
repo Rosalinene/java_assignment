@@ -13,6 +13,13 @@ public class WallClock extends Clock
     }//End constructor
 
     @Override
+    public String room() 
+    {
+        System.out.println("This still have room for that");
+        return null;
+    }//End room()
+    
+    @Override
     public String toString() 
     {
         String msg;
@@ -21,10 +28,4 @@ public class WallClock extends Clock
         
         return msg;
     }//End toString
-    
-    @Override
-    public void room() 
-    {
-        System.out.println("This still have room for that");
-    }//End room()
 }//End WallClock

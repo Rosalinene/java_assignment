@@ -18,6 +18,24 @@ public class CellPhone extends PortableElectronics
     }//End constructor
 
     @Override
+    public String batteryType() 
+    {
+        System.out.println("This cellphone has battery");
+        return null;
+    }// End batteryType()
+    
+    public String number()
+    {
+        System.out.println("This is your number");
+        return null;
+    }//End numver()
+    
+     public boolean takesPictures() 
+    {
+        return this.hasCamera;
+    }//End takePictures
+     
+    @Override
     public String toString() 
     {
         String msg;
@@ -25,16 +43,5 @@ public class CellPhone extends PortableElectronics
         msg += super.toString();
         
         return msg;
-    }//End toString
-
-    public boolean takesPictures() 
-    {
-        return this.hasCamera;
-    }//End takePictures
-    
-    @Override
-    public void batteryType() 
-    {
-        System.out.println("This cellphone has battery");
-    }// End batteryType()
+    }//End toString   
 }//End CellPhone

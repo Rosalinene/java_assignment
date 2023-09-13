@@ -16,6 +16,13 @@ public class IPod extends PortableElectronics
         this.capacity = capacity;
         this.type = type;
     }//End constructor
+    
+    @Override
+    public String batteryType() 
+    {
+        System.out.println("This ipod has battery");
+        return null;
+    }// End batteryType()
 
     public void setCapacity(int capacity) 
     {
@@ -37,10 +44,6 @@ public class IPod extends PortableElectronics
         return msg;
     }//End toString
 
-    @Override
-    public void batteryType() 
-    {
-        System.out.println("This ipod has battery");
-    }// End batteryType()
+    
   
 }//End IPod

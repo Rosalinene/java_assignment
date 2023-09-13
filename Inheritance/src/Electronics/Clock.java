@@ -15,6 +15,13 @@ public class Clock extends HomeAppliance
         this.currentTime = currentTime;
     }//End constructor
 
+    @Override
+    public String room() 
+    {
+        System.out.println("This still have room for that");
+        return null;
+    }//End room()
+    
     public String getCurrentTime() 
     {
         return currentTime;
@@ -34,11 +41,4 @@ public class Clock extends HomeAppliance
         
         return msg;
     }//End toString
-
-    @Override
-    public void room() 
-    {
-        System.out.println("This still have room for that");
-    }//End room()
-    
 }//End Clock
