@@ -18,11 +18,12 @@ public class Electronics
         this.weight = weight;
     }//End constructor
 
+    
     @Override
     public String toString() 
     {
         String msg;
-        msg = "Electronics{" + "manufacturer=" + manufacturer + ", price=" + price + ", weight=" + weight + '}';
+        msg = "Electronics{" + "manufacturer=" + this.manufacturer + ", price=" + this.price + ", weight=" + this.weight + '}';
         //msg+= super.toString();
         
         return msg;

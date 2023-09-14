@@ -19,16 +19,14 @@ public class CellPhone extends PortableElectronics
 
     @Override
     public String batteryType() 
-    {
-        System.out.println("This cellphone has battery");
-        return null;
+    {  
+        return "This cellphone has battery";
     }// End batteryType()
     
     public String number()
     {
-        System.out.println("This is your number");
-        return null;
-    }//End numver()
+        return this.phoneNumber;
+    }//End number()
     
      public boolean takesPictures() 
     {
@@ -39,7 +37,7 @@ public class CellPhone extends PortableElectronics
     public String toString() 
     {
         String msg;
-        msg = "CellPhone{" + "phoneNumber=" + phoneNumber + ", hasCamera=" + hasCamera + '}';
+        msg = "CellPhone{" + "phoneNumber=" + this.phoneNumber + ", hasCamera=" + this.hasCamera + '}';
         msg += super.toString();
         
         return msg;

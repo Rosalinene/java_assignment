@@ -15,8 +15,7 @@ public class WallClock extends Clock
     @Override
     public String room() 
     {
-        System.out.println("This still have room for that");
-        return null;
+        return "This still have room for that";
     }//End room()
     
     @Override

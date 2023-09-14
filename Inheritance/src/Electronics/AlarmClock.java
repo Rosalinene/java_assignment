@@ -18,8 +18,7 @@ public class AlarmClock extends Clock
     @Override
     public String room() 
     {
-        System.out.println("This still have room for that");
-        return null;
+        return "This still have room for that";
     }//End room()
     
     public void setAlarmTime(String alarmTime) 
@@ -31,7 +30,7 @@ public class AlarmClock extends Clock
     public String toString() 
     {
         String msg;
-        msg = "AlarmClock{" + "alarmTime=" + alarmTime + '}';
+        msg = "AlarmClock{" + "alarmTime=" + this.alarmTime + '}';
         msg += super.toString();
         
         return msg;

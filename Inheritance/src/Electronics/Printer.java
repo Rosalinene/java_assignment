@@ -27,7 +27,18 @@ public class Printer extends HomeAppliance
    @Override
     public String room() 
     {
-        System.out.println("This still have room for that");
-        return null;
+        return "This still have room for that";
     }//End room()
+
+    @Override
+    public String toString() 
+    {
+        String msg;
+        msg = "Printer{" + "dotsPerInch=" + this.dotsPerInch + ", paperLoaded=" + this.paperLoaded + ", inkLoaded=" + this.inkLoaded + '}';
+        msg += super.toString();
+        
+        return msg;
+    }//End toString
+    
+    
 }//End Printer

@@ -12,5 +12,5 @@ public abstract class PortableElectronics extends Electronics
         super(manufacturer, price, weight);
     }//End constructor
     
-    public abstract String batteryType();
+    public abstract String batteryType(); //Abstract batteryType()
 }//End PortableElectronics 
